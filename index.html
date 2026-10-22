@@ -18,13 +18,25 @@
             birthYear: 2006,
             isDeveloper: true,
             hobbies: ["reading", "drawing", "traveling"],
-        }
+        };
+
+        const Countage = new Date().getFullYear();
+        const age = Countage - userProfile.birthYear;
+
+        const CountHobbies = userProfile.hobbies.length;
+
 
         document.getElementById("profile").innerHTML =
             "Name: " + userProfile.name + "<br>" +
             "Birth Year:" + userProfile.birthYear + "<br>" +
             "Is Developer: " + userProfile.isDeveloper + "<br>" +
-            "Hobbies:" + userProfile.hobbies.join(",");
+            "Hobbies:" + userProfile.hobbies.join(",") + "<br>"
+
+            +
+            "The age: " + age + "<br>" +
+
+            " Number of Hobbies: " + CountHobbies;
+
 
 
 
