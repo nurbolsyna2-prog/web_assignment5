@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_5</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>Sain uu?</h1>
+    <p id="profile"> </p>
+    <script>
+        const userProfile = {
+            name: "Suizza Han",
+            birthYear: 2006,
+            isDeveloper: true,
+            hobbies: ["reading", "drawing", "traveling"],
+        }
+
+        document.getElementById("profile").innerHTML =
+            "Name: " + userProfile.name + "<br>" +
+            "Birth Year:" + userProfile.birthYear + "<br>" +
+            "Is Developer: " + userProfile.isDeveloper + "<br>" +
+            "Hobbies:" + userProfile.hobbies.join(",");
+
+
+
+
+    </script>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
