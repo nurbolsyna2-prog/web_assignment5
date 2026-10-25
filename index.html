@@ -14,36 +14,38 @@
 <body>
     <h1>Sain uu?</h1>
     <p id="profile"> </p>
-    <script>
-        const userProfile = {
-            name: "Suizza Han",
-            birthYear: 2006,
-            isDeveloper: true,
-            hobbies: ["reading", "drawing", "traveling"],
-        };
+    <!--task3: form-->
+    <form id="profileForm">
 
-        const Countage = new Date().getFullYear();
-        const age = Countage - userProfile.birthYear;
+        <label for="username"> Username:</label>
+        <input type="text" id="username" name="username" required>
 
-        const CountHobbies = userProfile.hobbies.length;
+        <label for="birthYear">Birth Year:</label>
+        <input type="number" id="birthYear" name="birthYear" required> <br>
+        <br>
+        <button type="submit" value="Submit"> Create/Update Profile</button>
 
 
-        document.getElementById("profile").innerHTML =
-            "Name: " + userProfile.name + "<br>" +
-            "Birth Year:" + userProfile.birthYear + "<br>" +
-            "Is Developer: " + userProfile.isDeveloper + "<br>" +
-            "Hobbies:" + userProfile.hobbies.join(",") + "<br>"
+    </form>
 
-            +
-            "The age: " + age + "<br>" +
+    <!--task5: list-->
 
-            " Number of Hobbies: " + CountHobbies;
-
-
+    <h2>My hobbies</h2>
+    <ul id="itemList">
+        <li>Reading</li>
+        <li>Cooking</li>
+    </ul>
+    <input type="text" id="itemInput" placeholder="New item">
+    <button id="addBtn">Add Item</button>
+    <button id="removeBtn">Remove Item</button>
 
 
 
-    </script>
+
+
+
+
+
 
 
     <script src="script.js"></script>

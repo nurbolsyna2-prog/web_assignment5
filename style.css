@@ -1,0 +1,42 @@
+h1 {
+    color: rgb(138, 43, 226);
+    font-size: 40px;
+}
+
+body {
+    background-color: darkseagreen;
+    margin-left: 20px;
+}
+
+
+
+button {
+    padding: 8px 14px;
+    background: #7b2fd6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+h2 {
+    color: rgb(0, 0, 0);
+}
+
+#itemList {
+    background: rgb(93, 143, 70);
+    padding: 12px 12px 12px 36px;
+    border-radius: 8px;
+}
+
+#itemList li {
+    margin: 4px 0;
+}
+
+input {
+    padding: 8px;
+    margin: 4px 8px 4px 4px;
+    border: 1px solid #3c6a11;
+    border-radius: 6px;
+}
